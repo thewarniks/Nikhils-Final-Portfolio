@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Energy Automation System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martian+Mono:wght@100..800&family=Monoton&family=Permanent+Marker&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+
+</div>
+<!-- nav-bar -->
+<div id="nav">
+    <img src="logo/sun_fra_hu_m_i_know_it-removebg-preview (1).png" alt="logo">
+    <a href="#home">Home</a>
+    <a href="desboard.html" target="_blank">Dasboard</a>
+    <a href="#center-about">About Us</a>
+    <a href="#about">Contact Us</a>
+    <a href="Product.html" target="_blank">Products</a>
+    <a href="login-signup.html" target="_blank"><button id="loginBtn" class="button">Log In</button></a>
+    <a href="login-signup.html" target="_blank"><button id="signupBtn" class="button">SignUp</button></a>
+</div>
+
+<main>
+    <!-- Homepage -->
+    <div class="First-banner">
+        <section id="home">
+            <video autoplay loop muted src="logo/SRX_Banner.webm" type="video/webm"></video>
+            <div class="container mx-auto text-center firstheading">
+                <h1
+                    class="text-6xl font-bold mb-4 bg-gradient-to-r from-teal-500 to-blue-700 inline-block text-transparent bg-clip-text">
+                    Welcome to Smart Matrix</h1>
+                <p class="text-3xl mb-10">Smart Occupancy Detection and Energy Management for Universities and
+                    commercial Places.</p>
+                <div class="flex justify-center space-x-10 mb-12">
+                    <div class="text-center">
+                        <i class="fas fa-leaf text-5xl mb-2 "></i>
+                        <p>Energy Savings</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-dollar-sign text-5xl mb-2"></i>
+                        <p>Cost Efficiency</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-tree text-5xl mb-2"></i>
+                        <p>Reduced Emissions</p>
+                    </div>
+                </div>
+                <a href="desboard.html" class="started-btn">Get
+                    Started</a>
+            </div>
+    </div>
+    <!-- list-topics -->
+    <h1 class="list-text">Our Contribution</h1>
+    <div id="liicon">
+        <section id="list-topics" class="list-topics">
+            <div class="container">
+                <div class="list-topics-content">
+                    <ul>
+                        <li>
+                            <div class="single-list-topics-content">
+                                <div class="single-list-topics-icon">
+                                    <i class="ri-school-line"></i>
+                                </div>
+                                <h2><a href="#">University</a></h2>
+                                <p>150 listings</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-list-topics-content">
+                                <div class="single-list-topics-icon">
+                                    <i class="ri-building-line"></i>
+                                </div>
+                                <h2><a href="#">Coprate Office</a></h2>
+                                <p>214 listings</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-list-topics-content">
+                                <div class="single-list-topics-icon">
+                                    <i class="ri-hotel-line"></i>
+                                </div>
+                                <h2><a href="#">Hotels</a></h2>
+                                <p>185 listings</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-list-topics-content">
+                                <div class="single-list-topics-icon">
+                                    <i class="ri-government-line"></i>
+                                </div>
+                                <h2><a href="#">Goverment Office</a></h2>
+                                <p>200 listings</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-list-topics-content">
+                                <div class="single-list-topics-icon">
+                                    <i class="ri-building-3-line"></i>
+                                </div>
+                                <h2><a href="#">Factory</a></h2>
+                                <p>120 listings</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <!-- work -->
+    <div id="work-com">
+        <section id="works" class="works">
+            <div class="container2">
+                <div class="Sectionhed">
+                    <h2>how it works??</h2>
+                    <p>Learn More about how our Products works:-</p>
+                </div><!--/.-->
+                <div class="works-content">
+                    <div class="column">
+                        <div>
+                            <div class="single-how-works" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-icon">
+                                    <i class="ri-live-fill"></i>
+                                </div>
+                                <h2>Night Vision Cameras</h2>
+                                <p>
+                                    Ongoing monitoring, Track room occupancy in real-time, Smart Occupancy Detection,
+                                    Scalable solution for campuses of all sizes.
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    read more
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-how-works" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-icon">
+                                    <i class="ri-remote-control-fill"></i>
+                                </div>
+                                <h2>Micro-Controler</h2>
+                                <p>
+                                    HVAC systems (ATmega328P, Broadcom BCM2711), When No human was not detected in
+                                    cameras automaticly power was cut Down.
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    read more
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-how-works" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-icon">
+                                    <i class="ri-mac-line"></i>
+                                </div>
+                                <h2>Software Support</h2>
+                                <p>
+                                    Our Software show the dashboard displays real-time occupancy information for
+                                    different rooms (classrooms, libraries, offices).
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    read more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- two part center -->
+    <section id="center-about">
+        <div class="center">
+            <div class="center-part1">
+                <h1>SMART MATRIX: Revolutionizing Energy Efficiency</h1>
+                <ol>
+                    <h2>1. Real-Time Occupancy Detection</h2>
+                </ol>
+                <ol>
+                    <h2>2. Automated Appliance Control</h2>
+                </ol>
+                <ol>
+                    <h2>3. Energy Savings and Cost Reduction</h2>
+                </ol>
+                <ol>
+                    <h2>4. Sustainability and Carbon Footprint Monitoring</h2>
+                </ol>
+                <ol>
+                    <h2>5. User-Friendly Web Interface</h2>
+                </ol>
+                <ol>
+                    <h2>6. Customizable and Scalable</h2>
+                </ol>
+                <button>Book a consultaion</button>
+            </div>
+            <div class="center-part2">
+                <img src="logo/business-data-information-illustration_251005-479.avif" alt="bhopu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Vector -->
+    <div class="section1bottom">
+        <img src="https://pngimg.com/d/nike_PNG6.png" alt="brand">
+        <img src="https://logos-world.net/wp-content/uploads/2023/07/Adidas-Logo.png" alt="brand">
+        <img src="https://www.carlogos.org/car-logos/rivian-logo-black-1300x1150.png" alt="brand">
+        <img src="https://1000logos.net/wp-content/uploads/2022/08/Zara-log%D0%BE.png" alt="brand">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Michael_Kors_%28brand%29_logo.svg/603px-Michael_Kors_%28brand%29_logo.svg.png"
+            alt="brand">
+        <img src="https://cdn.designcrowd.com/blog/2016/January/top-company-logos-black/14_Chanel_400.png" alt="brand">
+        <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Black.png" alt="brand">
+    </div>
+
+   <!-- Carousel wrapper -->
+   <section id="testimonials">
+    <div class="testimonial-heading">
+        <span>Comments</span>
+        <h4>What Our Clients Says??</h4>
+    </div>
+    <div class="testimonial-box-container">
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://th.bing.com/th/id/OIP.MakkNV1Y4hfLFEXgc7rHjQAAAA?w=256&h=256&rs=1&pid=ImgDetMain" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Rudra Parkash</strong>
+                        <span>@liammendes</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>“The tool has really automated some of our company’s processes. We now spend less time doing manual work. It’s making very easy for us. Thanks to its scheduling feature, we don’t need staff to work outside of business hours.”</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://th.bing.com/th/id/OIP.MakkNV1Y4hfLFEXgc7rHjQAAAA?w=256&h=256&rs=1&pid=ImgDetMain" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Noah Wood</strong>
+                        <span>@noahwood</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>"Working with Smartmatrix has been an absolute pleasure.Smartmatrix team of skilled professionals is not only knowledgeable in their field but also dedicated to providing top-notch service and support."</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://th.bing.com/th/id/OIP.MakkNV1Y4hfLFEXgc7rHjQAAAA?w=256&h=256&rs=1&pid=ImgDetMain" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Oliver Queen</strong>
+                        <span>@oliverqueen</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>“If you’re in search of a reliable, innovative software company, look no further than [SoftwareCompany]. Their team of seasoned professionals consistently exceeds expectations, offering cutting-edge solutions and exceptional customer service."</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://th.bing.com/th/id/OIP.MakkNV1Y4hfLFEXgc7rHjQAAAA?w=256&h=256&rs=1&pid=ImgDetMain" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Barry Allen</strong>
+                        <span>@barryallen</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>"They took the time to understand our specific needs and provided a tailor-made solution that greatly improved our operations. We are thrilled with the results and highly recommend Smartmatrix for any software development needs.”</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+    <!-- Members -->
+    <div id="work-com">
+        <section id="works" class="works">
+            <div class="container2">
+                <div class="Sectionhed">
+                    <h2>Our Team Members:</h2>
+                    <p>We are not build a company, We are bulding a family</p>
+                </div><!--/.section-header-->
+                <div class="works-content">
+                    <div class="team-mem">
+                        <div>
+                            <div class="single-how-works box-mem" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-img">
+                                    <img src="Profile/Vibhas.jpeg" alt="photo">
+                                </div>
+                                <h2>Vibhas Mahaldar</h2>
+                                <p class="Member-work">
+                                    CEO and Founder
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    Connect Me!
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-how-works box-mem" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-img">
+                                    <img src="Profile/Divyansh.jpeg" alt="photo">
+                                </div>
+                                <h2>Divyansh Dusad</h2>
+                                <p class="Member-work">
+                                    COO and Co-founder
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    Connect Me!
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-how-works box-mem" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-img">
+                                    <img src="Profile/Nikhil.jpeg" alt="photo">
+                                </div>
+                                <h2>Nikhil Sharma</h2>
+                                <p class="Member-work">
+                                    SPO and CTO
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    Connect Me!
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-how-works box-mem" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-img">
+                                    <img src="Profile/Pari.jpeg" alt="photo">
+                                </div>
+                                <h2>Pari Soni</h2>
+                                <p class="Member-work">
+                                    CMO
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    Connect Me!
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-how-works box-mem" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-img">
+                                    <img src="Profile/Ram.jpeg" alt="photo">
+                                </div>
+                                <h2>Ram Agarwal</h2>
+                                <p class="Member-work">
+                                    CFO and CRO
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn Conn-btn"
+                                    onclick="window.location.href='#'">
+                                    Connect Me!
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-how-works box-mem" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+                                <div class="single-how-works-img">
+                                    <img src="Profile/Tarun.jpeg" alt="photo">
+                                </div>
+                                <h2>Tarun Puniya</h2>
+                                <p class="Member-work">
+                                    PEM
+                                </p>
+                                <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                                    Connect Me!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Sustainability Impact -->
+    <section id="impact" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Sustainability Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Carbon Emissions Reduced</h3>
+                    <p class="text-4xl font-bold text-green-600 mb-2">500 kg</p>
+                    <p>Equivalent to planting 50 trees</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Energy Usage Reduction</h3>
+                    <p class="text-4xl font-bold text-green-600 mb-2">30%</p>
+                    <p>Compared to last month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-4">We are a team of passionate engineers and environmentalists dedicated to
+                        creating smart solutions for energy efficiency and sustainability.</p>
+                    <p>Our mission is to reduce global energy consumption and combat climate change through
+                        innovative technology.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block mb-2">Name</label>
+                            <input type="text" class="w-full border rounded px-2 py-1">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2">Email</label>
+                            <input type="email" class="w-full border rounded px-2 py-1">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2">Message</label>
+                            <textarea class="w-full border rounded px-2 py-1" rows="4"></textarea>
+                        </div>
+                        <button class="bg-green-500 text-white py-2 px-4 rounded">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section>
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="column mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-2">
+                        <img class="footer-img" src="logo/sun_fra_hu_m_i_know_it-removebg-preview (1).png" alt="logo">
+                    </h6>
+                    <h1>
+                        "YOUR SPACE, 
+                        YOUR ENERGY, 
+                        YOUR CONTROL" 
+                    </h1>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Services
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">1. Real-Time Occupancy Detection</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">2. Dashboard Appliance Control</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">3. Customizable and Scalable</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">4. User-Friendly Web Interface</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#home" class="text-reset">Home Page</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Dashboard</a>
+                    </p>
+                    <p>
+                        <a href="#center-about" class="text-reset">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#about" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Jaipur, Rajhsthan, India</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@SmartMatrix.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> +91 9649 056 592</p>
+                    <p><i class="fas fa-print me-3"></i> +91 7597 702 550</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="">SmartMatrix.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <script src='https://kit.fontawesome.com/c8e4d183c2.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+    integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

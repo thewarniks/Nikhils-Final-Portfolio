@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Login and Signup Button</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+        }
+
+        html,
+        body {
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            background: url() no-repeat;
+            background-size: cover;
+        }
+
+        video {
+            padding-bottom: 0 0 100px 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+            position: absolute;
+            border: none;
+            filter: blur(5px);
+            filter: brightness(25%);
+        }
+
+        .container {
+            background: rgba(254, 254, 254, 0.1);
+            width: 500px;
+            padding: 40px 0;
+            color: #fff;
+            text-align: center;
+            border: 3px solid rgba(254, 254, 254, 0.7);
+            border-radius: 25px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+
+        form {
+            position: relative;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 5em;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .inputbox {
+            position: relative;
+        }
+
+        .inputbox .input,
+        .input {
+            width: 85%;
+            height: 70px;
+            outline: none;
+            font-size: 1.3em;
+            border: 3px solid rgba(254, 254, 254, 0.6);
+            border-radius: 50px;
+            background: transparent;
+            color: #fff;
+            margin: 10px 0;
+            padding-left: 40px;
+            padding-right: 80px;
+            transition: 0.1s ease-in;
+        }
+
+        .inputbox .input:focus {
+            border: 3px solid #fff;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .input::placeholder {
+            color: #fff;
+        }
+
+        .inputbox i{
+           position: absolute;
+           top: 50%;
+           right: 70px;
+           transform: translateY(-50%);
+           font-size: 1.8em;
+        } 
+
+        .forgetpw{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .forgetpw label input{
+            scale: 1.2;
+            accent-color: #2e90c1;
+        }
+
+        .pw a{
+            color:#fff;
+            text-decoration: none;
+        }
+
+        .pw a:hover{
+            text-decoration: underline;
+        }
+
+        .btn{
+            color: #222;
+            background: #fff;
+            font-size: 1.8em;
+            border: none;
+            margin-top: 50px;
+            cursor: pointer;
+            padding: 0;
+            transition: 0.2s ease-in-out;
+        }
+
+        .btn:hover{
+            color: #fff;
+            background: #7075fa;
+        }
+
+        .createnew{
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .createnew a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .createnew a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- login-signup page -->
+    <video autoplay loop muted src="logo/655382c93a7499c677d6e2ad_RENDER-site-HEVC-HEVC-transcode.mp4"
+        type="video/webm"></video>
+
+    <div class="container" data-tilt data-tilt-glare="true" data-tilt-max-glare="true">
+        <form action="">
+            <h2>Login</h2>
+            <div class="inputbox">
+                <input type="text" class="input" placeholder="Username" required>
+                <i class="ri-user-search-line"></i>
+            </div>
+            <div class="inputbox">
+                <input type="passward" class="input" placeholder="Passward" required>
+                <i class="ri-lock-password-line"></i>
+            </div>
+
+
+            <div class="forgetpw">
+                <label for="checkbox">
+                    <input type="checkbox">
+                    <span>Remember Me</span>
+                </label>
+                <div class="pw"><a href="#">Forget Passward?</a></div>
+            </div>
+            <input type="submit" value="Login" Class="input btn">
+            <div class="createnew">
+                <span>Don't have an account? <a href="">Sign up</a></span>
+            </div>
+        </form>
+    </div>
+     
+
+    <script src="vanilla-tilt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body::-webkit-scrollbar {
+            display: block;
+            width: 8px;
+            background: #95c11e;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #fff;
+
+            border-radius: 50px;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .loader-box {
+            min-width: 100vh;
+            position: fixed;
+            display: grid;
+            place-items: center;
+            inset: 0;
+            background: #111;
+        }
+
+        .loader {
+            position: relative;
+            height: 120px;
+            width: 120px;
+            rotate: 45deg;
+        }
+
+        .loader span {
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            border: 8px solid #a3d421;
+            left: 0;
+            top: 0;
+            scale: 0.7;
+        }
+
+        .loader span:nth-child(1) {
+            transform: translate(0px);
+            animation: element1 3s .6s ease infinite;
+        }
+
+        @keyframes element1 {
+
+            0%,
+            90%,
+            100% {
+                transform: translate(0px);
+            }
+
+            15% {
+                transform: translate(60px, 0px);
+            }
+
+            25% {
+                transform: translate(60px, 0px);
+            }
+
+            40% {
+                transform: translate(60px, 60px);
+            }
+
+            50% {
+                transform: translate(60px, 60px);
+            }
+
+            65% {
+                transform: translate(0px, 60px);
+            }
+
+            75% {
+                transform: translate(0px, 60px);
+            }
+        }
+
+        .loader span:nth-child(2) {
+            transform: translate(60px, 0px);
+            animation: element2 3s .2s ease infinite;
+        }
+
+        @keyframes element2 {
+
+            0%,
+            90%,
+            100% {
+                transform: translate(60px, 0px);
+            }
+
+            15% {
+                transform: translate(60px, 60px);
+            }
+
+            25% {
+                transform: translate(60px, 60px);
+            }
+
+            40% {
+                transform: translate(0px, 60px);
+            }
+
+            50% {
+                transform: translate(0px, 60px);
+            }
+
+            65% {
+                transform: translate(0px);
+            }
+
+            75% {
+                transform: translate(0px);
+            }
+        }
+
+        .loader span:nth-child(3) {
+            transform: translate(60px, 60px);
+            animation: element3 3s 0s ease infinite;
+        }
+
+        @keyframes element3 {
+
+            0%,
+            90%,
+            100% {
+                transform: translate(60px, 60px);
+            }
+
+            15% {
+                transform: translate(0px, 60px);
+            }
+
+            25% {
+                transform: translate(0px, 60px);
+            }
+
+            40% {
+                transform: translate(0px);
+            }
+
+            50% {
+                transform: translate(0px);
+            }
+
+            65% {
+                transform: translate(60px, 0px);
+            }
+
+            75% {
+                transform: translate(60px, 0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-box">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+<script>
+            const preloader = document.querySelector(".loader-box");
+        
+            window.addEventListener("Load", () => {
+                preloader.style.display = "none";
+            })  
+</script>
+</body>
+</html>
+
+
+    </section>

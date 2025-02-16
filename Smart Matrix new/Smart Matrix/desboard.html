@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="desboard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <img src="logo/sun_fra_hu_m_i_know_it-removebg-preview (1).png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="desboard.html">Dasboard</a>
+        <a href="Product.html" target="_blank">Products</a>
+        <a href="login-signup.html" target="_blank"><button id="loginBtn" class="button">Log In</button></a>
+        <a href="login-signup.html" target="_blank"><button id="signupBtn" class="button">SignUp</button></a>
+    </div>
+
+    <main id="Analytics-Efficiency">
+        <!-- Analytics and Efficiency -->
+        <section id="analytics" class="py-16 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Analytics and Efficiency</h2>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <canvas id="efficiencyChart"></canvas>
+                </div>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <button class="bg-green-500 text-white py-2 px-4 rounded">Daily</button>
+                    <button class="bg-green-500 text-white py-2 px-4 rounded">Weekly</button>
+                    <button class="bg-green-500 text-white py-2 px-4 rounded">Monthly</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- User Settings -->
+        <section id="settings" class="py-16 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">User Settings</h2>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Alert Preferences</h3>
+                    <div class="mb-4">
+                        <label class="block mb-2">High Energy Usage Threshold (kWh)</label>
+                        <input type="number" class="border rounded px-2 py-1" value="10">
+                    </div>
+                    <button class="bg-green-500 text-white py-2 px-4 rounded">Save Settings</button>
+                </div>
+                <div class="mt-8 bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Generate Report</h3>
+                    <div class="mb-4">
+                        <label class="block mb-2">Select Room</label>
+                        <select class="border rounded px-2 py-1">
+                            <option>Living Room</option>
+                            <option>Kitchen</option>
+                            <option>Bedroom</option>
+                        </select>
+                    </div>
+                    <button class="bg-green-500 text-white py-2 px-4 rounded">Generate Report</button>
+                </div>
+            </div>
+    </main>
+
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-11/26/full/1701018131-7486.jpg?im=FeatureCrop,size=(826,465)" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <h2>Home</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="ri-home-7-fill fa-fw w3-margin-right w3-large w3-text-teal"></i>Jaipur, Rajhsthan</p>
+                        <p><i class="ri-door-open-fill fa-fw w3-margin-right w3-large w3-text-teal"></i>Total Rooms - 5</p>
+                        <p><i class="ri-wireless-charging-line fa-fw w3-margin-right w3-large w3-text-teal"></i>Working Electronics - 7</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="ri-base-station-line fa-fw w3-margin-right w3-text-teal"></i>Stay-Places</b></p>
+                        <p>Living Room</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                        </div>
+                        <p>Bedroom</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                <div class="w3-center w3-text-white">80%</div>
+                            </div>
+                        </div>
+                        <p>Kitchen</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                        </div>
+                        <p>Guest Room</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                        </div>
+                        <br>
+
+                        <p class="w3-large w3-text-theme"><b><i
+                                    class="ri-pin-distance-line fa-fw w3-margin-right w3-text-teal"></i>Office-Places</b></p>
+                        <p>Managment Room</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:100%">100%</div>
+                        </div>
+                        <p>Employee Room</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:55%">55%</div>
+                        </div>
+                        <p>Speech Room</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:25%">25%</div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="ri-time-zone-fill fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Working-Time
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Home</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - <span
+                                class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
+                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                            iste.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Office</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2024 - Apr 2024
+                        </h6>
+                        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est
+                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                            iste.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Other Areas</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2024 - Aug 2024
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i></h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Subscription Date</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+                        <p>One time investment and life time support</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Home</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - Dec 2024</h6>
+                        <p><i class="ri-money-rupee-circle-fill"></i>Paid</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Office</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - Dec 2024</h6>
+                        <p><i class="ri-money-rupee-circle-fill"></i>Paid</p><br>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="column mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-2">
+                            <img class="footer-img" src="logo/sun_fra_hu_m_i_know_it-removebg-preview (1).png"
+                                alt="logo">
+                        </h6>
+                        <p>
+                            "We are not build a company, We are bulding a family"
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Services
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">1. Real-Time Occupancy Detection</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">2. Dashboard Appliance Control</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">3. Customizable and Scalable</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">4. User-Friendly Web Interface</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Home Page</a>
+                        </p>
+                        <p>
+                            <a href="desboard.html" class="text-reset">Dashboard</a>
+                        </p>
+                        <p>
+                            <a href="Product.html" class="text-reset">Products</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Jaipur, Rajhsthan, India</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@SmartMatrix.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +91 9649 056 592</p>
+                        <p><i class="fas fa-print me-3"></i> +91 7597 702 550</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="">SmartMatrix.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+        integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

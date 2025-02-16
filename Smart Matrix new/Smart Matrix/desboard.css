@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#Analytics-Efficiency {
+    top: 30px;
+}
+
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+.w3-display-container img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.w3-container{
+    margin: 1.5vh 0 1.5vh 0;
+}

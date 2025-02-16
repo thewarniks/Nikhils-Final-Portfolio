@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product-Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martian+Mono:wght@100..800&family=Monoton&family=Permanent+Marker&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #Product-Page {
+            padding-top: 100px;
+        }
+
+        .w3-quarter h3 {
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        #project-img img {
+            max-height: 120px;
+            object-fit: cover;
+        }
+
+        .productbor {
+            border: 2px solid black;
+            width: 65vw;
+        }
+
+        .list-text {
+            justify-content: center;
+            display: flex;
+            font-size: 3.5vw;
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <img src="logo/sun_fra_hu_m_i_know_it-removebg-preview (1).png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="desboard.html">Dasboard</a>
+        <a href="Product.html">Products</a>
+        <a href="login-signup.html" target="_blank"><button id="loginBtn" class="button">Log In</button></a>
+        <a href="login-signup.html" target="_blank"><button id="signupBtn" class="button">SignUp</button></a>
+    </div>
+
+    <section id="Product-Page">
+        <main>
+            <h1 class="list-text">Our Products</h1>
+            <!-- !PAGE CONTENT! -->
+            <div class="w3-main w3-content w3-padding">
+
+                <!-- First Photo Grid-->
+
+                <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTgdAkrAESDKbDS94xEBC3YpmcIGMn79aFEewicbrbuVrVb9pMqvlbkq0qkTbgcTJJX2fzlA9sDF-qsxkX48KnLOmmjTqCKzJ2taUaiyrtHGuZ9s_4mR--i"
+                            alt="Sandwich" style="width:100%">
+                        <h3>AIWaft 4K PTZ Camera</h3>
+                        <p>AI frame tracking, 71° wide-angle 12X Optical 16X Digital Zoom, Gesture control, 1/2.5”,
+                            CMOS 60fps sensor, Effective Multiple</p>
+
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRj90_Dy0j4qVF1xq8DaRsyJOZYOc_dXy3kbNK1hrUUqAri2t5utMC5JEPhH97cov6c3xPVp-Cvahn4sUatxe4ByGITGFmqMcOB71bWwmr67RVKURkii1aT"
+                            alt="Steak" style="width:100%">
+                        <h3>IR Vandal Dome Camera</h3>
+                        <p>4K FHD CP Plus IR Vandal Dome Camera CP-UNC-VE4K081ZL5E-VMD
+                        </p>
+
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTKMOAuVfJb92bqq38fO4-y4OWpUTy3seF3CPEil3Mhbjg-qg1r63CuSBN6DEFtkAcAxciUBFZNsBjd1r8ukEhvTgA1oj0Jnw"
+                            alt="Cherries" style="width:100%">
+                        <h3> IR Vandal Dome Camera 50</h3>
+                        <p>CP PLUS 8 MP 4K Full HD IR Vandal Dome Camera 50 m with 1/2.5 inch Sensor,
+                            CP-UNC-VE4K081ZL5E-VMD</p>
+                    </div>
+
+
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRMETmejAvxntruh2_0Tv8EI8-lXm_0MPrKwZCgYodlPudPGCBobT1vORXzciAY_Ysg_tKpta9D_1JXpUbiQvRLxLjKfliZKD4W_QQpoFvRx_SxK9gjIL3A"
+                            alt="Pasta and Wine" style="width:100%">
+                        <h3>Sony 4K PTZ Camera</h3>
+                        <p>Sony 4K PTZ Camera with 1" CMOS Sensor and PoE+ BRCX1000/1</p>
+
+                    </div>
+                </div>
+
+                <!-- Second Photo Grid-->
+                <div class="w3-row-padding w3-padding-16 w3-center">
+
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcShS75N0W0RmG8VcH88N-jzPJyx-5quSLH-MBzEw7Z4qKxg-xiCuJ1E37SM6pAaqO8p3vUcj0wuyIk7rGGM6MzXG26wlzOrRcmDNbqmslPSXxp6RijQsu3eMg"
+                            alt="Popsicle" style="width:100%">
+                        <h3>Sony SRG-A40 4K PTZ Camera</h3>
+                        <p>Sony SRG-A40 4K PTZ Camera with Built-In AI and 30x/40x Clear Image Zoom (Black)</p>
+
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ4MUGoE-YdYcIuTp3m--NuzebPPDSKWub05rw8hLSXPnVXQo5VSXsummis0kJz0Hg5JT612pipZ0Q2l0z9LjjtXjTYtbNn1C0hWHzZn8jn6kIjtLHHIEav_w"
+                            alt="Salmon" style="width:100%">
+                        <h3>PTZ Security Camera</h3>
+                        <p>Power Pixel 5MP 4K FHD Wi-Fi Outdoor PTZ Security Camera with 360 degree Video Coverage,
+                            Two-Way Audio Talk & Colored Night Vision
+                        </p>
+                    </div>
+
+
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSllHPFt1Ch_kkne8P48nREF4Je4DNZ-clYyw6mJwMWk2TVxPGump5i-MIK2j-SmYn13SDaCHC1OmT0AiiOHTnfqvXyifdrNVkpFK1wdbFk4NCn-paPSzb6"
+                            alt="Sandwich" style="width:100%">
+                        <h3> IP Turret PoE Wired Camera</h3>
+                        <p>Amcrest UltraHD 4K (8MP) Outdoor Security IP Turret PoE Wired Camera, 3840x2160, 164ft
+                            NightVision, 2.8mm Lens, IP67 Weatherproof</p>
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTiNvcInt7jPsHzukl7-XI7OPFnn97onzLj99wUB9IWviE6kluWNyigU11zeQc9ZwnIeXquEUxS82CC6umFhSJwRLwaTCDTRb4oy_noXR7tXGNL8c-I0tdkcw"
+                            alt="Croissant" style="width:100%">
+                        <h3>Outdoor PTZ CCTV Camera</h3>
+                        <p>Active Pixel 4MP 4K Pan Tilt Zoom Night Vision WiFi Outdoor PTZ CCTV Camera with 8xZoom
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="w3-content w3-padding" style="max-width:1564px" id="project-img">
+
+                    <!-- Project Section -->
+                    <div class="w3-container w3-padding-32" id="projects">
+                        <h1 class="list-text">Our Services</h1>
+                    </div>
+
+                    <div class="w3-row-padding">
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+                                <img src="https://infygain.com/uploads/476fe7d3-c260-40e3-b127-30907e20522cCCTV%20Camera%20Service%20Provider%20in%20Coimbatore.webp"
+                                    alt="House" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTA6Pe6KCojXZowgz5qb2X6vv36hAokvL8ONbF7kKZ1GhnP-tJVa3Gne9RdMDv5Eov_Y&usqp=CAU"
+                                    alt="House" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQp0tnmV2FWOP3U2NGFvTyNvJlKAIGcqu3Sh6bmhinc38sDRJGBVYEHw8sZYgYzJgnMQA&usqp=CAU"
+                                    alt="House" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+                                <img src="https://www.spycameracctv.com/cdn/shop/files/Banner-One-Hikvision-Trade_1000x1000_crop_center.jpg"
+                                    alt="House" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-row-padding">
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">House Safety</div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxK4_w4ZahCIjiutVuw_r3gETzjsKZ3qS6lm3KGyYrin4cjiloNsxtGpO7oJswBicPoHM&usqp=CAU"
+                                    alt="House" style="width:99%">
+                            </div>
+                        </div>
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">Office View</div>
+                                <img src="https://cdn.mos.cms.futurecdn.net/rQbgNfD59Q6WBLf8bq5C9X.png" alt="House"
+                                    style="width:99%">
+                            </div>
+                        </div>
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">Room View</div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShDibV6-JlQMwDkJfYVER5_4JNf2ZEPDDd0RCBqONJaOa_4jNnFN7BhnXD2et-vrGZRQs&usqp=CAU"
+                                    alt="House" style="width:99%">
+                            </div>
+                        </div>
+                        <div class="w3-col l3 m6 w3-margin-bottom">
+                            <div class="w3-display-container">
+                                <div class="w3-display-topleft w3-black w3-padding">Dog House</div>
+                                <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/YB/ZK/ZQ/38894123/cctv-camera-installation-service-500x500.jpg"
+                                    alt="House" style="width:99%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr id="about">
+
+                <!-- About Section -->
+                <div class="w3-container w3-padding-32 w3-center">
+                    <h3>About Our Product Policy's</h3><br>
+                    <img src="https://media.fs.com/images/community/erp/CQTiA_xDrCRaSM6QkDSBsGHHTD.jpg" alt="Me"
+                        class="w3-image" style="display:block;margin:auto" width="800" height="533">
+                    <div class="w3-padding-32">
+                        <h4><b>Why You Choose Our Products??</b></h4>
+                        <h6><i>As authorized distributors, all orders and customs documents are provided by the original
+                                manufacturer. We also provide official technical support. For project-based orders,
+                                local warranty is provided by the manufacturer, while we provide warranty for dealer
+                                orders.</i></h6>
+                        <p>Revolutionize security with innovative surveillance solutions, empowering businesses to
+                            protect assets and create safer environments. Premier provider for quality, performance, and
+                            service.</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section>
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="column mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-2">
+                                <img class="footer-img" src="logo/sun_fra_hu_m_i_know_it-removebg-preview (1).png"
+                                    alt="logo">
+                            </h6>
+                            <p>
+                                "We are not build a company, We are bulding a family"
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Services
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">1. Real-Time Occupancy Detection</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">2. Dashboard Appliance Control</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">3. Customizable and Scalable</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">4. User-Friendly Web Interface</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="index.html" class="text-reset">Home Page</a>
+                            </p>
+                            <p>
+                                <a href="desboard.html" class="text-reset">Dashboard</a>
+                            </p>
+                            <p>
+                                <a href="Product.html" class="text-reset">Products</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Jaipur, Rajhsthan, India</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@SmartMatrix.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> +91 9649 056 592</p>
+                            <p><i class="fas fa-print me-3"></i> +91 7597 702 550</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Copyright:
+                <a class="text-reset fw-bold" href="">SmartMatrix.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+        integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
